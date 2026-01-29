@@ -1,0 +1,84 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f5f5f5, #e6f2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ---------- SIGNUP CONTAINER ---------- */
+.signin-form {
+    background-color: white;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 25px 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- FORM LABELS ---------- */
+.signin-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.signin-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* ---------- SIGNUP BUTTON ---------- */
+.signin-form button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.signin-form button:hover {
+    background-color: darkorange;
+}

@@ -1,0 +1,217 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    padding: 50px 20px 30px 20px;
+    background: linear-gradient(to right, #ffec99, #ffe066);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: underline;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* ---------- HEADER IMAGE ---------- */
+header .image img {
+    width: 260px; /* slightly bigger */
+    margin: 20px auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* ---------- LOGIN / SIGNUP BUTTONS ---------- */
+header .sign-up.or.login {
+    margin-top: 15px;
+}
+
+header .sign-up.or.login a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header .sign-up.or.login button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    transition: 0.3s;
+}
+
+header .sign-up.or.login button:hover {
+    background-color: darkorange;
+}
+/* ---------- AI TUTOR SECTION ---------- */
+.ai-tutor {
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 700px;
+  background: #0f172a; /* dark indigo */
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.ai-tutor h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+.ai-tutor p {
+  font-size: 1rem;
+  color: #cbd5f5;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.ai-button {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  background: #a5b4fc; /* soft violet */
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(165, 180, 252, 0.4);
+}
+
+.ai-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+
+/* ---------- SECTIONS ---------- */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-top: 4px solid #333; /* line separating sections */
+    border-bottom: 4px solid #333;
+    max-width: 1200px;
+    border-radius: 12px;
+}
+
+/* Individual section colors */
+.why-choose-us {
+    background-color: #c6f6d5; /* light green */
+}
+
+.who-what {
+    background-color: #fbd38d; /* light orange */
+}
+
+ .what-learn{
+    background-color: #f490ec; /* light blue */
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    text-decoration: underline;
+}
+
+section h3, section h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* ---------- FEATURES / USES ---------- */
+.uses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px auto;
+}
+
+.uses div {
+    background-color: #fff3f3;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.uses div:hover {
+    transform: translateY(-5px);
+}
+
+.uses div img {
+    width: 80px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* ---------- LISTS ---------- */
+ul {
+    margin: 10px auto 20px auto;
+    padding-left: 40px;
+    max-width: 800px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #ffd166;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer pre {
+    color: #ffd166;
+    text-align: left;
+    margin: 10px auto;
+    max-width: 800px;
+}

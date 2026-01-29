@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashstyle.css">
+</head>
+<body>
+    <header>
+        <img src="nihongologo.png" alt="Japanese Learning" class="dashboard-logo"/>
+        <h1>Welcome to your NIHONGO NOTES Dashboard</h1>
+        <p id="dashboard-description">Access your learning materials and track your progress here.</p>
+        <a href="index.html"><button type="button" id="logout-button">LOGOUT</button></a>
+    </header>
+    <script>
+  document.getElementById("logout-button").addEventListener("click", () => {
+  localStorage.removeItem("isLoggedIn");
+  window.location.href = "index.html";
+});
+</script>
+    <div class="navigation-menu">
+        <a href="scripts.html">Scripts</a>
+        <a href="vocab.html">Vocabulary</a>
+        <a href="grammar.html">Grammar</a>
+        <a href="kanji.html">Kanji</a>
+        <div class="language-select">
+            <img src="flag.png" alt="India Flag" class="flag-icon">
+            <select class="language-dropdown">
+                <option>EN</option>
+                <option>HI</option>
+                <option>FR</option>
+                <option>DE</option>
+            </select>
+        </div>
+    </div>
+    <div class="books-cover">
+        <div class="book-item">
+            <img src="scripted.png" alt="Scripts Book" class="book-cover"/>
+            <h3>Mastering Japanese Scripts</h3>
+            <p>Dive deep into Hiragana & Katakana with our comprehensive guide.</p>
+            <a href="scripts.html"><button type="button">Explore Scripts</button></a>
+        </div>
+        <div class="book-item">
+            <img src="vocabulary.png" alt="Vocabulary Book" class="book-cover"/>
+            <h3>Building Your Vocabulary</h3>
+            <p>Expand your vocabulary with our curated collection of essential Japanese words and phrases.</p>
+            <a href="vocab.html"><button type="button">Explore Vocabulary</button></a>
+        </div>
+        <div class="book-item">
+            <img src="jgrammar.png" alt="Grammar Book" class="book-cover"/>
+            <h3>Understanding Japanese Grammar</h3>
+            <p>Learn the rules and structures of Japanese grammar to enhance your language skills.</p>
+            <a href="grammar.html"><button type="button">Explore Grammar</button></a>
+        </div>
+        <div class="book-item">
+            <img src="kanji.png" alt="Kanji Book" class="book-cover"/>
+            <h3>Learning Kanji Effectively</h3>
+            <p>Master the art of Kanji with our step-by-step learning approach.</p>
+            <a href="kanji.html"><button type="button">Explore Kanji</button></a>
+        </div>
+    </div>
+    <footer class="feedback">
+        <h2>We Value Your Feedback!</h2>
+        <p>Your experience matters to us. Please share your thoughts and suggestions to help us improve NIHONGO NOTES.</p>
+        <textarea rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br>
+        <a href="thankyou.html"><button type="submit">Submit Feedback</button></a>
+    </footer>
+<script>
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

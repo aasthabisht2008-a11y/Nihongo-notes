@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border: 4px solid grey;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+/* ---------- BACK BUTTON ---------- */
+#go-back {
+    height: 45px;
+    padding: 8px 15px;
+    font-weight: bold;
+    border: 2px solid blue;
+    background-color: aquamarine;
+    color: black;
+    border-radius: 6px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#go-back:hover {
+    background-color: #7fffd4;
+}
+
+/* ---------- HIRAGANA & KATAKANA ---------- */
+.hiragana,
+.katakana {
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.hiragana {
+    background-color: lightblue;
+}
+
+.katakana {
+    background-color: lightgreen;
+}
+
+.hiragana img,
+.katakana img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 15px;
+    border: 2px solid black;
+}
+
+/* ---------- INFO BOXES ---------- */
+#hiragana-info,
+#katakana-info {
+    margin: 15px auto;
+    padding: 15px;
+    max-width: 800px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background-color: white;
+}
+
+/* ---------- PRACTICE RESOURCES ---------- */
+.practice-resources,
+.kanji-practice-resources {
+    background-color: lightyellow;
+    text-align: center;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+#book,
+#writing {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid blue;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#book:hover,
+#writing:hover {
+    background-color: darkorange;
+}
+
+/* ---------- KANJI PAGE ---------- */
+body.kanji {
+    background-color: floralwhite;
+}
+
+.kanji-overview {
+    min-height: 600px;
+    padding: 20px;
+    background-image: url("nihongologo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.kanji-introduction {
+    max-width: 800px;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+.kanji-examples {
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: lightpink;
+    text-align: left;
+}
+
+.kanji-examples ul {
+    margin-left: 20px;
+}

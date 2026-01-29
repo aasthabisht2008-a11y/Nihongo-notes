@@ -1,0 +1,248 @@
+/* ---------- RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #ffe066, #ffec99);
+    border-bottom: 4px solid #ccc;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 15px 0;
+    text-decoration: underline;
+}
+
+header p#dashboard-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+header .dashboard-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#logout-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid navy;
+    border-radius: 6px;
+    background-color: aliceblue;
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    position:absolute;
+    right:20px;
+    top:30px;
+}
+/* ---------- NAVIGATION MENU ---------- */
+.navigation-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffe0b2;
+    padding: 15px;
+    gap: 15px;
+    border-bottom: 4px solid #ccc;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    padding: 10px 18px;
+    background-color: orange;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation-menu a:hover {
+    background-color: darkorange;
+}
+
+/* Language dropdown */
+.language-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-select .flag-icon {
+    width: 24px;
+    height: auto;
+}
+
+.language-select .language-dropdown {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* ---------- BOOK COVER SECTION ---------- */
+.books-cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+.book-item {
+    background-color: #fff3f3;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+}
+
+.book-item img.book-cover {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.book-item h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.book-item button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-item button:hover {
+    background-color: darkorange;
+}
+
+/* ---------- FOOTER / FEEDBACK ---------- */
+footer.feedback {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-top: 4px solid #ccc;
+}
+
+footer.feedback h2 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+footer.feedback p {
+    margin-bottom: 15px;
+    color: #ffd166;
+}
+
+footer.feedback textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #aaa;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+footer.feedback button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer.feedback button:hover {
+    background-color: darkorange;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+/* ---------- RESPONSIVE LAYOUT ---------- */
+@media (max-width: 1024px) {
+    /* Slightly reduce card width for tablets */
+    .book-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation menu stacks vertically */
+    .navigation-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce book card width for small tablets / large phones */
+    .book-item {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header text smaller */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p#dashboard-description {
+        font-size: 0.95rem;
+    }
+
+    /* Book cards full width */
+    .book-item {
+        width: 90%;
+    }
+
+    /* Footer textarea full width */
+    footer.feedback textarea {
+        width: 95%;
+    }
+
+    /* Language dropdown smaller */
+    .language-select {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
